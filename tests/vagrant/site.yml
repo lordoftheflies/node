@@ -1,5 +1,5 @@
 ---
-# Ansible Role: ansible-role-nodejs
+# Ansible Role: ansible_role_nodejs
 
 
 
@@ -43,7 +43,7 @@
 
 #  vars:
 
-#    - ansible-role-nodejs_debug : true
+#    - ansible_role_nodejs_debug : true
 
     - deployment_user: true # for DEBUGGING set to false to skip deployment_user role
   roles: 
@@ -67,7 +67,7 @@
   vars:
 
 
-    - ansible-role-nodejs_debug : true
+    - ansible_role_nodejs_debug : true
 
     - upgrade: true  # set to true to run upgrade role
     - epel: true      # set to true to run epel role

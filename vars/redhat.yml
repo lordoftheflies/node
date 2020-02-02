@@ -1,4 +1,4 @@
 ---
-# ansible-role-ansible-role-nodejs/vars/debian.yml
+# ansible-role-ansible_role_nodejs/vars/debian.yml
 
-ansible-role-nodejs_package_extension: 'rpm'
+ansible_role_nodejs_package_extension: 'rpm'

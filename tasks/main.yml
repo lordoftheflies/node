@@ -25,13 +25,13 @@
         - "{{ fact_role_path }}/defaults/{{ ansible_distribution | lower }}.yml"
       skip: true
 
-- name: "DEBUG - Debug ansible-role-nodejs variable values"
+- name: "DEBUG - Debug ansible_role_nodejs variable values"
   include: "{{ item }}"
   with_first_found:
     - files:
         - "{{ fact_role_path }}/tasks/debug.yml"
       skip: true
-  when: ansible-role-nodejs_debug is defined and ansible-role-nodejs_debug
+  when: ansible_role_nodejs_debug is defined and ansible_role_nodejs_debug
 
 # END - boilerplate tasks
 
@@ -41,15 +41,15 @@
 
 - name: "DEBUG - value of ansible_distribution"
   debug: var=ansible_distribution
-  when: ansible-role-nodejs_debug
+  when: ansible_role_nodejs_debug
 
 - name: "DEBUG - value of ansible_distribution_version"
   debug: var=ansible_distribution_version
-  when: ansible-role-nodejs_debug
+  when: ansible_role_nodejs_debug
 
 - name: "DEBUG - value of ansible_distribution_major_version"
   debug: var=ansible_distribution_major_version
-  when: ansible-role-nodejs_debug
+  when: ansible_role_nodejs_debug
 
 ## CentOS
 

@@ -2,7 +2,7 @@
 - name: Converge
   hosts: all
   vars:
-    - ansible-role-nodejs_deployment_users_home: /home/vagrant
-    - ansible-role-nodejs_testing_provider: vagrant
+    - ansible_role_nodejs_deployment_users_home: /home/vagrant
+    - ansible_role_nodejs_testing_provider: vagrant
   roles:
-    - ansible-role-nodejs
+    - ansible_role_nodejs

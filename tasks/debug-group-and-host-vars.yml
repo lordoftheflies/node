@@ -4,4 +4,4 @@
 
 - name: "Debug - group and host vars from {{ hostvars[inventory_hostname] }}"
   debug: msg="{{ hostvars[inventory_hostname] }}"
-  when: ansible-role-nodejs_debug
+  when: ansible_role_nodejs_debug
