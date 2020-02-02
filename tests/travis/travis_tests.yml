@@ -1,0 +1,7 @@
+---
+# Ansible Role: ansible-role-nodejs
+
+- hosts: localhost
+  become: true
+  roles:
+    - ansible-role-ansible-role-nodejs
