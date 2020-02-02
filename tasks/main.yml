@@ -88,8 +88,28 @@
       - 19.04
 
 - name: "Install necessary packages"
+  become: yes
   package:
-    - name: python-pip
+    - name: n
       state: present
-    - name: libssl-dev
-      state: present
+
+- name: "Install necessary nodejs"
+  become: yes
+  command: "n --version {{ node_runtime }}"
+
+- name: Remove the globally packages.
+  become: yes
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: present
+
+
+- name: Remove the globally packages.
+  become: yes
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: present
+  with_items:
+    - gulp

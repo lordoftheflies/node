@@ -1,5 +1,6 @@
 ---
 # ansible-role-ansible_role_nodejs/defaults/main.yml
+node_runtime: '10.18.0'
 
 ansible_role_nodejs_debug: false
 
